@@ -4,6 +4,7 @@ const users = require("./routes/user.js");
 const posts = require("./routes/post.js");
 const cookieParser = require("cookie-parser");
 
+
 app.use(cookieParser("secretcode"));
 
 app.get("/getsignedcookie", (req, res) => {
